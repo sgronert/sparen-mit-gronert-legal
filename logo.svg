@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024"><defs><linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2dd4bf"/><stop offset="1" stop-color="#0f766e"/></linearGradient></defs><circle cx="512" cy="512" r="512" fill="#0f172a"/><g transform="translate(112 112) scale(0.78125)">
+    <circle cx="512" cy="512" r="338" fill="none" stroke="url(#ring)" stroke-width="64"/>
+    <path d="M628 392 C 600 322 468 318 424 392 C 380 466 470 506 512 520 C 554 534 644 574 600 648 C 556 722 424 718 396 648"
+          fill="none" stroke="#f8fafc" stroke-width="58" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M626 396 C 612 338 646 300 712 290 C 722 352 692 402 626 396 Z" fill="#f59e0b"/>
+  </g></svg>
