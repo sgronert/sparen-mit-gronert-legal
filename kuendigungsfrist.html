@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kündigungsfrist berechnen · Sparen mit Gronert</title>
+<meta name="description" content="Kostenloser Rechner: letzter Kündigungstag aus Ende der Mindestlaufzeit, Kündigungsfrist und Verlängerung. Hinweis, keine Rechtsberatung.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kündigungsfrist berechnen · Sparen mit Gronert">
+<meta property="og:description" content="Letzten Kündigungstag berechnen. Hinweis, keine Rechtsberatung.">
+<meta property="og:image" content="https://sgronert.github.io/sparen-mit-gronert-legal/social.png">
+<style>:root{color-scheme:light dark;--bg:#fff;--fg:#1b1f23;--muted:#59636e;--line:#d0d7de;--link:#0b6b4f;--card:#f6f8fa;--accent:#0b6b4f;--on-accent:#fff;--warn:#8a5a00;--warn-bg:#fff4d6;--danger:#b42318}
+@media (prefers-color-scheme:dark){:root{--bg:#14181c;--fg:#e6edf3;--muted:#9aa4af;--line:#30363d;--link:#5fd0a8;--card:#1c2228;--accent:#5fd0a8;--on-accent:#0b1a14;--warn:#f5c56b;--warn-bg:#2d2615;--danger:#ff8a80}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:16px}
+h1{font-size:1.6rem;line-height:1.25;margin:.6em 0 .3em}h2{font-size:1.15rem;margin:1.6em 0 .4em}
+nav,.muted{color:var(--muted);font-size:.9rem}
+.brand{display:flex;align-items:center;gap:10px;margin:8px 0 12px;font-weight:700;font-size:1.05rem}.brand img{width:36px;height:36px}
+a{color:var(--link)}
+.hl{border-left:4px solid var(--link);padding:.6em .9em;margin:1em 0}
+.hl strong{display:block}
+form{display:grid;gap:20px;margin:1.2em 0}
+fieldset{border:1px solid var(--line);border-radius:12px;margin:0;padding:12px 14px 14px;min-width:0}
+legend{font-weight:700;padding:0 6px}
+label{display:block}
+.field{display:grid;gap:4px;margin-top:8px}
+.row{display:flex;gap:8px;flex-wrap:wrap}.row>*{flex:1 1 8rem;min-width:0}
+input[type=date],input[type=number],select{font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:8px;min-height:44px;padding:8px 10px;width:100%}
+input:focus-visible,select:focus-visible,button:focus-visible,a:focus-visible,textarea:focus-visible,.choice input:focus-visible+span{outline:3px solid var(--accent);outline-offset:2px}
+.choices{display:grid;gap:6px;margin-top:4px}
+.choice{display:flex;align-items:flex-start;gap:10px;min-height:44px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;cursor:pointer}
+.choice input{width:22px;height:22px;margin:1px 0 0;flex:none;accent-color:var(--accent)}
+.choice small{display:block;color:var(--muted);font-size:.85rem}
+.choice:has(input:checked){border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.sub{margin:8px 0 0 32px}
+.err{color:var(--danger);font-size:.9rem;margin:2px 0 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 18px;border-radius:10px;font:inherit;font-weight:700;text-decoration:none;cursor:pointer;border:2px solid var(--accent)}
+.btn-primary{background:var(--accent);color:var(--on-accent);width:100%}
+.btn-secondary{background:transparent;color:var(--accent);min-height:44px}
+.result{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin:0 0 1.2em}
+.result .label{margin:0;color:var(--muted);font-size:.9rem;font-weight:600}
+.result .big{margin:2px 0 6px;font-size:1.6rem;font-weight:800;line-height:1.25}
+.chip{display:inline-block;padding:2px 10px;border-radius:999px;font-weight:700;font-size:.9rem;border:1px solid currentColor}
+.chip.ok{color:var(--accent)}.chip.soon,.chip.urgent{color:var(--warn);background:var(--warn-bg)}.chip.passed{color:var(--danger)}
+.result p{margin:.5em 0}
+.copy textarea{width:100%;min-height:6.5em;font:inherit;font-size:.95rem;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;resize:vertical;overflow:hidden}
+.copy .row{align-items:center;margin-top:6px}.copy .row>*{flex:0 1 auto}
+.app{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:1.4em 0}
+.app p{margin:0 0 10px}
+footer{margin:2em 0 1em}
+[hidden]{display:none!important}
+@media (prefers-reduced-motion:no-preference){.result{animation:in .2s ease-out}@keyframes in{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}}</style>
+</head>
+<body>
+<main>
+<div class="brand"><img src="logo.svg" alt="" width="36" height="36"><span>Sparen mit Gronert</span></div>
+<nav><a href="datenschutz.html">Datenschutzerklärung</a> · <a href="impressum.html">Impressum</a> · <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a></nav>
+<h1>Kündigungsfrist berechnen</h1>
+<p>Bis wann muss deine Kündigung beim Anbieter sein? Drei Angaben aus deinem Vertrag genügen.</p>
+
+<form id="form" novalidate>
+  <fieldset>
+    <legend>1. Laufzeit</legend>
+    <div class="choices" role="radiogroup" aria-label="Was steht in deinem Vertrag?">
+      <label class="choice"><input type="radio" name="basis" value="end" checked><span>Ende der Mindestlaufzeit</span></label>
+      <label class="choice"><input type="radio" name="basis" value="start"><span>Vertragsbeginn und Laufzeit</span></label>
+    </div>
+    <div class="field" id="endField">
+      <label for="minTermEnd">Mindestlaufzeit endet am</label>
+      <input type="date" id="minTermEnd" min="1990-01-01" max="2099-12-31" aria-describedby="minTermEndErr">
+      <p class="err" id="minTermEndErr" hidden>Bitte ein gültiges Datum wählen.</p>
+    </div>
+    <div id="startFields" hidden>
+      <div class="row">
+        <div class="field">
+          <label for="startDate">Vertragsbeginn</label>
+          <input type="date" id="startDate" min="1990-01-01" max="2099-12-31" aria-describedby="startDateErr">
+        </div>
+        <div class="field">
+          <label for="termMonths">Laufzeit in Monaten</label>
+          <input type="number" id="termMonths" inputmode="numeric" min="1" max="120" step="1" value="24">
+        </div>
+      </div>
+      <p class="err" id="startDateErr" hidden>Bitte Vertragsbeginn und Laufzeit angeben.</p>
+      <p class="muted" id="startHint" hidden></p>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>2. Kündigungsfrist</legend>
+    <div class="row">
+      <div class="field">
+        <label for="noticeValue">Dauer</label>
+        <input type="number" id="noticeValue" inputmode="numeric" min="0" max="365" step="1" value="1" aria-describedby="noticeErr">
+      </div>
+      <div class="field">
+        <label for="noticeUnit">Einheit</label>
+        <select id="noticeUnit">
+          <option value="days">Tage</option>
+          <option value="weeks">Wochen</option>
+          <option value="months" selected>Monate</option>
+        </select>
+      </div>
+    </div>
+    <p class="err" id="noticeErr" hidden>Bitte eine Zahl ab 0 eingeben.</p>
+  </fieldset>
+
+  <fieldset>
+    <legend>3. Nach der Mindestlaufzeit</legend>
+    <div class="choices">
+      <label class="choice"><input type="radio" name="renewal" value="monthly" checked><span>Unbefristet, monatlich kündbar<small>Regelfall bei Verbraucherverträgen seit 1. März 2022 (§ 309 Nr. 9 BGB)</small></span></label>
+      <label class="choice"><input type="radio" name="renewal" value="fixed"><span>Feste Verlängerung<small>Ältere Verträge oder wenn es so im Vertrag steht</small></span></label>
+      <label class="choice"><input type="radio" name="renewal" value="none"><span>Endet ohne Verlängerung</span></label>
+    </div>
+    <div class="field sub" id="renewField" hidden>
+      <label for="renewMonths">Verlängert sich um</label>
+      <select id="renewMonths">
+        <option value="1">1 Monat</option>
+        <option value="3">3 Monate</option>
+        <option value="6">6 Monate</option>
+        <option value="12" selected>12 Monate</option>
+        <option value="24">24 Monate</option>
+      </select>
+    </div>
+  </fieldset>
+
+  <button class="btn btn-primary" type="submit">Frist berechnen</button>
+</form>
+
+<section id="result" class="result" aria-live="polite" tabindex="-1" hidden>
+  <p class="label" id="resLabel"></p>
+  <p class="big" id="resBig"></p>
+  <span class="chip" id="resChip"></span>
+  <p id="resText"></p>
+  <p class="muted" id="resNote"></p>
+  <div class="copy">
+    <label for="copyText"><strong>Zum Kopieren</strong></label>
+    <textarea id="copyText" readonly></textarea>
+    <div class="row"><button class="btn btn-secondary" type="button" id="copyBtn">Text kopieren</button><span class="muted" id="copyState" role="status"></span></div>
+  </div>
+</section>
+
+<div class="hl">
+  <strong>Hinweis, keine Rechtsberatung</strong>
+  Planungshilfe auf Grundlage deiner Eingaben. Maßgeblich sind dein Vertrag und das Gesetz. Die Kündigung zählt erst, wenn sie beim Anbieter angekommen ist: plane ein paar Tage Puffer ein. Fällt der Tag auf ein Wochenende oder einen Feiertag, verschiebt er sich nicht automatisch nach hinten. Die Berechnung läuft nur in deinem Browser, nichts wird gespeichert oder gesendet.
+</div>
+
+<section class="app" aria-labelledby="appTitle">
+  <h2 id="appTitle" style="margin-top:0">Fristen nicht mehr selbst ausrechnen</h2>
+  <p>Die Android-App „Sparen mit Gronert: Verträge“ rechnet mit derselben Logik, merkt sich deine Verträge und erinnert dich vor jeder Frist.</p>
+  <a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=com.sebastiangronert.sparen" rel="noopener">Bei Google Play ansehen</a>
+</section>
+
+<footer class="muted"><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutzerklärung</a></footer>
+</main>
+<script src="kuendigungsfrist-rechner.js"></script>
+<script src="kuendigungsfrist-seite.js"></script>
+</body>
+</html>
